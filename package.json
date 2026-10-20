@@ -1,0 +1,13 @@
+{
+  "name": "hanzo-aktau",
+  "version": "1.0.0",
+  "description": "Hanzo — суши, роллы и пицца в Актау. Доставка и самовывоз.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
