@@ -1,4 +1,4 @@
-// ===== Hanzo Aktau — interactions =====
+// ===== Samurai Almaty — interactions =====
 (function () {
   "use strict";
 
@@ -25,7 +25,7 @@
     { kz: "Балалар мәзірі", ru: "Детское меню" }
   ];
 
-  var STORAGE_KEY = "hanzo-lang";
+  var STORAGE_KEY = "samurai-lang";
 
   function getLang() {
     try {

@@ -1,7 +1,7 @@
 {
-  "name": "hanzo-aktau",
+  "name": "samurai-almaty",
   "version": "1.0.0",
-  "description": "Hanzo — суши, роллы и пицца в Актау. Доставка и самовывоз.",
+  "description": "Samurai — суши, роллы и пицца в Алматы. Доставка и самовывоз.",
   "private": true,
   "scripts": {
     "start": "node server.js"

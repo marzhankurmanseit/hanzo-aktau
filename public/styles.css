@@ -1,5 +1,5 @@
 /* ============================================================
-   Hanzo Aktau — vibrant gradient theme
+   Samurai Almaty — vibrant gradient theme
    ============================================================ */
 :root {
   --ink:        #140B1C;
@@ -28,7 +28,7 @@
   --shadow: 0 24px 60px -24px rgba(0,0,0,.65);
   --maxw: 1180px;
 
-  --font-display: "Unbounded", system-ui, sans-serif;
+  --font-display: "Montserrat", system-ui, sans-serif;
   --font-body: "Manrope", system-ui, -apple-system, sans-serif;
 }
 
