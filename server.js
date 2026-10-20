@@ -56,8 +56,9 @@ const server = http.createServer((req, res) => {
       const ext = path.extname(filePath).toLowerCase();
       const type = TYPES[ext] || "application/octet-stream";
       const headers = { "Content-Type": type };
-      // Long cache for static assets, short for HTML.
-      if (ext === ".html") {
+      // Revalidate HTML/CSS/JS every load so updates show immediately;
+      // long cache only for heavy static assets (images, fonts).
+      if (ext === ".html" || ext === ".css" || ext === ".js") {
         headers["Cache-Control"] = "no-cache";
       } else {
         headers["Cache-Control"] = "public, max-age=86400";
