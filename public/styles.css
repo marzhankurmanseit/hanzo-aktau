@@ -2,30 +2,30 @@
    Samurai Almaty — vibrant gradient theme
    ============================================================ */
 :root {
-  --ink:        #140A04;
-  --ink-2:      #1E1308;
-  --surface:    #26180C;
-  --surface-2:  #311E0F;
-  --line:       rgba(236, 238, 251, 0.10);
-  --line-2:     rgba(236, 238, 251, 0.18);
+  --ink:        #FFF7F0;
+  --ink-2:      #FFFFFF;
+  --surface:    #FFFFFF;
+  --surface-2:  #FFF2E7;
+  --line:       rgba(42, 22, 6, 0.10);
+  --line-2:     rgba(42, 22, 6, 0.16);
 
-  --cream:      #FFF2E6;
-  --muted:      #E0C3A8;
-  --muted-2:    #B08E6E;
+  --cream:      #241304;
+  --muted:      #7E5E45;
+  --muted-2:    #9A7B5E;
 
   --coral:      #FF5A1F;
   --tangerine:  #FF8A00;
-  --gold:       #FFC01F;
-  --lime:       #FFC01F;
+  --gold:       #D9700A;
+  --lime:       #FF7A1A;
 
-  --grad: linear-gradient(100deg, #FF5A1F 0%, #FF8A00 50%, #FFC01F 100%);
-  --grad-soft: linear-gradient(135deg, rgba(255,138,0,.22), rgba(255,192,31,.16));
+  --grad: linear-gradient(100deg, #FF5A1F 0%, #FF8A00 50%, #FFB020 100%);
+  --grad-soft: linear-gradient(135deg, rgba(255,138,0,.14), rgba(255,176,32,.12));
 
   --radius:   22px;
   --radius-lg: 30px;
   --radius-sm: 14px;
 
-  --shadow: 0 24px 60px -24px rgba(0,0,0,.65);
+  --shadow: 0 24px 50px -24px rgba(42,22,6,.22);
   --maxw: 1180px;
 
   --font-display: "Montserrat", system-ui, sans-serif;
@@ -69,7 +69,7 @@ ul, ol { list-style: none; }
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: .55;
+  opacity: .20;
 }
 .orb-1 { width: 520px; height: 520px; background: #FF5A1F; top: -160px; left: -120px; animation: drift1 22s ease-in-out infinite; }
 .orb-2 { width: 460px; height: 460px; background: #FF9E2C; top: 30%; right: -160px; animation: drift2 26s ease-in-out infinite; }
@@ -105,11 +105,11 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -10px rgba(255,90,31,.7); }
 .btn-ghost {
-  background: rgba(255,242,230,.04);
+  background: rgba(42,22,6,.05);
   border-color: var(--line-2);
   color: var(--cream);
 }
-.btn-ghost:hover { background: rgba(255,242,230,.10); transform: translateY(-2px); }
+.btn-ghost:hover { background: rgba(42,22,6,.08); transform: translateY(-2px); }
 
 /* ---------- header ---------- */
 .site-header {
@@ -117,7 +117,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(16px);
-  background: rgba(20,10,4,.72);
+  background: rgba(255,247,240,.82);
   border-bottom: 1px solid var(--line);
 }
 .header-inner {
@@ -163,7 +163,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
   padding: 3px;
   border-radius: 999px;
   border: 1px solid var(--line-2);
-  background: rgba(255,242,230,.04);
+  background: rgba(42,22,6,.05);
 }
 .lang-switch button {
   font-family: var(--font-body);
@@ -193,7 +193,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
   font-weight: 900;
   font-size: clamp(14rem, 34vw, 34rem);
   line-height: .8;
-  color: rgba(255,242,230,.035);
+  color: rgba(42,22,6,.05);
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
@@ -356,6 +356,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .tile-body { position: absolute; left: 18px; bottom: 16px; right: 18px; }
 .tile-name {
   display: block;
+  color: #fff;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.25rem;
@@ -373,7 +374,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
   padding: 9px 16px;
   border-radius: 999px;
   border: 1px solid var(--line-2);
-  background: rgba(255,242,230,.03);
+  background: rgba(42,22,6,.03);
   color: var(--muted);
   transition: color .2s, border-color .2s, background .2s;
 }
@@ -515,7 +516,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
 .contact-value { font-weight: 700; font-size: 1.05rem; }
 
 /* ---------- footer ---------- */
-.site-footer { border-top: 1px solid var(--line); padding: 50px 0 30px; margin-top: 40px; background: rgba(20,10,4,.6); }
+.site-footer { border-top: 1px solid var(--line); padding: 50px 0 30px; margin-top: 40px; background: rgba(255,243,233,.75); }
 .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; align-items: start; }
 .footer-brand { display: flex; flex-direction: column; gap: 4px; }
 .footer-brand .brand-mark { font-size: 2rem; }
@@ -573,7 +574,7 @@ main, .site-header, .site-footer { position: relative; z-index: 1; }
     flex-direction: column;
     gap: 0;
     margin: 0;
-    background: rgba(20,10,4,.97);
+    background: rgba(255,247,240,.98);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--line);
     padding: 10px 20px 20px;
